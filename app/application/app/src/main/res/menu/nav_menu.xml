@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--the groups here are used to make a horizontal line between the two groups-->
+    <group android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/menu_login_or_register"
+            android:icon="@drawable/ic_person_add"
+            android:title="Log In / Register" />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_exit"
+            android:title="Log Out" />
+    </group>
+
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_reviews"
+            android:icon="@drawable/ic_baseline_rate_review_24"
+            android:title="Reviews" />
+
+        <item
+            android:id="@+id/menu_specifications"
+            android:icon="@drawable/ic_baseline_house_24"
+            android:title="House Specifications" />
+
+    </group>
+
+    <group android:id="@+id/group3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_history"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="Financial History" />
+
+        <item
+            android:id="@+id/menu_support"
+            android:icon="@drawable/ic_baseline_contact_support_24"
+            android:title="Contact Support" />
+
+    </group>
+
+<!--    <item-->
+<!--        android:id="@+id/menu_login"-->
+<!--        android:icon="@drawable/ic_person"-->
+<!--        android:title="Log In" />-->
+<!--    <item-->
+<!--        android:id="@+id/menu_register"-->
+<!--        android:icon="@drawable/ic_person_add"-->
+<!--        android:title="Register" />-->
+
+
+<!--    <item-->
+<!--        android:id="@+id/menu_profile"-->
+<!--        android:icon="@drawable/ic_person"-->
+<!--        android:title="Profile" />-->
+
+
+</menu>

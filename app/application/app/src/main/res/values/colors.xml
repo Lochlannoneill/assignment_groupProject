@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+<!--    <color name="colorPrimary">#6200EE</color>-->
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
+
+<!--    <color name="colorPrimary">#393939</color>-->
+<!--    <color name="colorPrimaryDark">#2F2F2F</color>-->
+<!--    <color name="colorAccent">#52b7f8</color>-->
+<!--    <color name="backgroundFragment">#4B4B4B</color>-->
+<!--    <color name="tabTextColor">#FFFFFF</color>'-->
+
+<!--    <color name="colorPrimary">#292929</color>-->
+<!--    <color name="colorPrimaryBright">#545454</color>-->
+<!--    <color name="colorPrimaryDark">#1b1b1b</color>-->
+<!--    <color name="colorAccent">#66CD00</color>-->
+<!--    <color name="colorAccentBright">#00FF00</color>-->
+<!--    <color name="colorAccentDark">#52A600</color>-->
+<!--    <color name="backgroundFragment">#4B4B4B</color>-->
+<!--    <color name="textColor">#FFFFFF</color>-->
+
+    <color name="colorPrimary">#2F374A</color>
+    <color name="colorPrimaryBright">#AEC9D4</color>
+    <color name="colorPrimaryDark">#2F374A</color>
+    <color name="colorAccent">#2ab4f5</color>
+    <color name="colorAccentBright">#0062FF</color>
+    <color name="colorAccentDark">#366E00</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRed">#D60000</color>
+    <color name="colorTextHint">#808080</color>
+    <color name="colorYellow">#B8860B</color>
+    <color name="colorBackgroundFragment">#4B4B4B</color>
+
 </resources>

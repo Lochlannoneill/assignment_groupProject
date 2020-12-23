@@ -8,7 +8,8 @@
     <string name="Fashion">Fashion</string>
     <string name="open">open</string>
     <string name="close">close</string>
-    <string name="link_register">Already have an account? Register here</string>
+    <string name="link_register">Don\'t have an account? Register here</string>
+    <string name="link_login">Already have an account? Login here</string>
 
     <string-array name="instruments">
         <item>11_placeholder</item>

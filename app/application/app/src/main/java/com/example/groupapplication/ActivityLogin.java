@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +40,7 @@ public class ActivityLogin extends AppCompatActivity implements NavigationView.O
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
 
+
         final TextView txtRegisterLink = this.findViewById(R.id.textviewRegisterLink);
         txtRegisterLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,9 +49,20 @@ public class ActivityLogin extends AppCompatActivity implements NavigationView.O
             }
         });
 
+//
+//      TO-DO ------ VERIFY USER BEFORE PROCEEDING WITH THIS ACTION ----------
+//
+        final Button buttonLogin = this.findViewById(R.id.button_login);
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ActivityLogin.this.startActivity(new Intent(ActivityLogin.this, MainActivity.class));
+                Toast.makeText(getApplicationContext(), "Welcome, {Username}", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         drawerLayout.closeDrawer(GravityCompat.START);
@@ -65,7 +78,7 @@ public class ActivityLogin extends AppCompatActivity implements NavigationView.O
 //            startActivity(newIntent);
 //        }
         else if (item.getItemId() == R.id.menu_logout) {
-            Toast.makeText(this, "Placeholder Text", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "{Username} logged out", Toast.LENGTH_LONG).show();
             Intent newIntent = new Intent(this, ActivityLogin.class);
             startActivity(newIntent);
         }

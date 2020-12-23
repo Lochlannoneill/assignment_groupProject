@@ -65,7 +65,7 @@ public class ActivityHistory extends AppCompatActivity implements NavigationView
             startActivity(newIntent);
         }
         else if (item.getItemId() == R.id.menu_logout) {
-            Toast.makeText(this, "Placeholder Text", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "{Username} logged out", Toast.LENGTH_LONG).show();
             Intent newIntent = new Intent(this, ActivityLogin.class);
             startActivity(newIntent);
         }

@@ -23,7 +23,7 @@ public class ActivitySupport extends AppCompatActivity implements NavigationView
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reviews);
+        setContentView(R.layout.activity_support);
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
@@ -55,7 +55,7 @@ public class ActivitySupport extends AppCompatActivity implements NavigationView
             startActivity(newIntent);
         }
         else if (item.getItemId() == R.id.menu_logout) {
-            Toast.makeText(this, "Placeholder Text", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "{Username} logged out", Toast.LENGTH_LONG).show();
             Intent newIntent = new Intent(this, ActivityLogin.class);
             startActivity(newIntent);
         }

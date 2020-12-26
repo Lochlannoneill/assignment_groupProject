@@ -1,4 +1,4 @@
-package com.example.groupapplication;
+package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,22 +13,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FragmentFashion#newInstance} factory method to
+ * Use the {@link FragmentGroceries#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentFashion extends Fragment {
+public class FragmentGroceries extends Fragment {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
 
-    private String[] fashion, fashion_prices, fashion_codes;
-    private int[] images = {R.drawable.hat, R.drawable.shirt, R.drawable.jeans,
-            R.drawable.socks, R.drawable.shoes};
+    private String[] groceries, groceries_prices, groceries_codes;
+    private int[] groceries_images = {R.drawable.milk, R.drawable.pizza, R.drawable.steak,
+            R.drawable.bread, R.drawable.fish, R.drawable.honey};
     private View listItemsView;
 
-    public static FragmentInstruments newInstance() {
-        return new FragmentInstruments();
+    public static FragmentGroceries newInstance() {
+        return new FragmentGroceries();
     }
 
     @Nullable
@@ -53,18 +53,18 @@ public class FragmentFashion extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        listItemsView = inflater.inflate(R.layout.fragment_fashion, container, false);
+        listItemsView = inflater.inflate(R.layout.fragment_groceries, container, false);
         // connect with layout
         recyclerView = listItemsView.findViewById(R.id.product_list);
         // set layout manager
         recyclerView.setLayoutManager(new LinearLayoutManager(listItemsView.getContext()));
         //get instruments from values
-        fashion = getResources().getStringArray(R.array.fashion);
+        groceries = getResources().getStringArray(R.array.groceries);
         //get prices from values
-        fashion_prices = getResources().getStringArray(R.array.fashion_prices);
-        fashion_codes = getResources().getStringArray(R.array.fashion_codes);
+        groceries_prices = getResources().getStringArray(R.array.groceries_prices);
+        groceries_codes = getResources().getStringArray(R.array.groceries_codes);
         // make an adapter with all the values which will go into each row
-        adapter = new RecyclerviewAdapterFashion(fashion, fashion_prices, fashion_codes, images);
+        adapter = new RecyclerviewAdapterGrocery(groceries, groceries_prices, groceries_codes, groceries_images);
         //set adapter
         recyclerView.setAdapter(adapter);
         //set linear layout to display items vertically
@@ -72,7 +72,6 @@ public class FragmentFashion extends Fragment {
         recyclerView.setLayoutManager(linearLayoutManager);
         //return this view on create
         return listItemsView;
-
     }
 
 }

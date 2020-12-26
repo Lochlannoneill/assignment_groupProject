@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:background="@drawable/color_gradient_primary">
+>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorWhite">
+>
 
             <ImageView
                 android:id="@+id/product_image"
@@ -51,7 +51,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Price"
-                android:textColor="@color/colorRed"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/product_name"
                 app:layout_constraintTop_toBottomOf="@+id/product_name" />

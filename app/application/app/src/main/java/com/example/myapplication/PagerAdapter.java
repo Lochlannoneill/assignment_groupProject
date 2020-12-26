@@ -1,4 +1,4 @@
-package com.example.groupapplication;
+package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -30,7 +30,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
                 return new FragmentInstruments();
             case 2:
                 return new FragmentFashion();
-                default: return null;
+            default: return null;
         }
 
     }

@@ -1,21 +1,17 @@
-package com.example.groupapplication;
+package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.navigation.NavigationView;
@@ -81,12 +77,12 @@ public class ActivityReviews extends AppCompatActivity implements NavigationView
             startActivity(newIntent);
         }
         else if (item.getItemId() == R.id.menu_login_or_register) {
-            Intent newIntent = new Intent(this, ActivityLogin.class);
+            Intent newIntent = new Intent(this, LoginActivity.class);
             startActivity(newIntent);
         }
         else if (item.getItemId() == R.id.menu_logout) {
             Toast.makeText(this, "{Username} logged out", Toast.LENGTH_LONG).show();
-            Intent newIntent = new Intent(this, ActivityLogin.class);
+            Intent newIntent = new Intent(this, LoginActivity.class);
             startActivity(newIntent);
         }
 //        else if (item.getItemId() == R.id.menu_reviews) {
@@ -95,10 +91,6 @@ public class ActivityReviews extends AppCompatActivity implements NavigationView
 //        }
         else if (item.getItemId() == R.id.menu_specifications) {
             Intent newIntent = new Intent(this, ActivitySpecifications.class);
-            startActivity(newIntent);
-        }
-        else if (item.getItemId() == R.id.menu_history) {
-            Intent newIntent = new Intent(this, ActivityHistory.class);
             startActivity(newIntent);
         }
         else if (item.getItemId() == R.id.menu_support) {

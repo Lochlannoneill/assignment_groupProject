@@ -1,4 +1,4 @@
-package com.example.groupapplication;
+package com.example.myapplication;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,36 +10,36 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class RecyclerviewAdapterInstrument extends RecyclerView.Adapter<RecyclerviewAdapterInstrument.ViewHolder>{
+public class RecyclerviewAdapterGrocery extends RecyclerView.Adapter<RecyclerviewAdapterGrocery.ViewHolder>{
 
-//    Context context;
-    String[] instruments, instruments_prices, instruments_codes;
-    int[] instruments_images;
+    //    Context context;
+    String[] groceries, groceries_prices, groceries_codes;
+    int[] groceries_images;
     private LayoutInflater layoutInflater;
 
-    public RecyclerviewAdapterInstrument(String[] i, String[] ip, String[] ic, int[] img){
+    public RecyclerviewAdapterGrocery(String[] f, String[] fp, String[] fc, int[] img){
 //        context = ctxt;
-        instruments = i;
-        instruments_prices = ip;
-        instruments_codes = ic;
-        instruments_images = img;
+        groceries = f;
+        groceries_prices = fp;
+        groceries_codes = fc;
+        groceries_images = img;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RecyclerviewAdapterGrocery.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 //        layoutInflater = LayoutInflater.from(context);
         layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.row_product, parent, false);
-        return new ViewHolder(view);
+        return new RecyclerviewAdapterGrocery.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int index) {
-        holder.text_product_name.setText(instruments[index]);
-        holder.text_product_price.setText(instruments_prices[index]);
-        holder.text_product_code.setText(instruments_codes[index]);
-        holder.image_product.setImageResource(instruments_images[index]);
+    public void onBindViewHolder(@NonNull RecyclerviewAdapterGrocery.ViewHolder holder, final int index) {
+        holder.text_product_name.setText(groceries[index]);
+        holder.text_product_price.setText(groceries_prices[index]);
+        holder.text_product_code.setText(groceries_codes[index]);
+        holder.image_product.setImageResource(groceries_images[index]);
 //        holder.layout.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -56,7 +56,7 @@ public class RecyclerviewAdapterInstrument extends RecyclerView.Adapter<Recycler
 
     @Override
     public int getItemCount() {
-        return instruments.length;
+        return groceries.length;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

@@ -1,4 +1,4 @@
-package com.example.groupapplication;
+package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -89,28 +89,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //            startActivity(newIntent);
 //        }
         if (item.getItemId() == R.id.menu_login_or_register) {
-            Intent newIntent = new Intent(this, ActivityLogin.class);
+            Intent newIntent = new Intent(this, LoginActivity.class);
             startActivity(newIntent);
         }
         else if (item.getItemId() == R.id.menu_logout) {
             Toast.makeText(this, "{Username} logged out", Toast.LENGTH_SHORT).show();
-            Intent newIntent = new Intent(this, ActivityLogin.class);
+            Intent newIntent = new Intent(this, LoginActivity.class);
             startActivity(newIntent);
         }
 //        else if (item.getItemId() == R.id.menu_register) {
 //            Intent newIntent = new Intent(this, ActivityRegister.class);
 //            startActivity(newIntent);
 //        }
-       else if (item.getItemId() == R.id.menu_reviews) {
+        else if (item.getItemId() == R.id.menu_reviews) {
             Intent newIntent = new Intent(this, ActivityReviews.class);
             startActivity(newIntent);
         }
-       else if (item.getItemId() == R.id.menu_specifications) {
+        else if (item.getItemId() == R.id.menu_specifications) {
             Intent newIntent = new Intent(this, ActivitySpecifications.class);
-            startActivity(newIntent);
-        }
-       else if (item.getItemId() == R.id.menu_history) {
-            Intent newIntent = new Intent(this, ActivityHistory.class);
             startActivity(newIntent);
         }
         else if (item.getItemId() == R.id.menu_support) {

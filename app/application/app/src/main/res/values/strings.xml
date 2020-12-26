@@ -1,16 +1,39 @@
 <resources>
-    <string name="app_name">Project2</string>
-
-    <string name="Username">Lochlann O Neill</string>
-    <string name="ProfilePicture">Profile Picture</string>
-    <string name="Instruments">Instruments</string>
-    <string name="Groceries">Groceries</string>
-    <string name="Fashion">Fashion</string>
+    <string name="app_name">Group Project Year 3</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">Login</string>
+    <string name="login_register">Login / Register</string>
+    <string name="register">Register</string>
+    <string name="gov_id">GOV ID</string>
+    <string name="google">GOOGLE</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="logo">Logo</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
     <string name="open">open</string>
     <string name="close">close</string>
-    <string name="link_register">Don\'t have an account? Register here</string>
-    <string name="link_login">Already have an account? Login here</string>
 
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="support">Support</string>
+    <string name="payments">Payments</string>
+    <string name="details">Details</string>
+    <string name="prediction">Prediction</string>
     <string-array name="instruments">
         <item>11_placeholder</item>
         <item>11_placeholder</item>
@@ -36,12 +59,12 @@
         <item>13_placeholder</item>
         <item>13_placeholder</item>
         <item>13_placeholder</item>
-<!--        <item>€229.99</item>-->
-<!--        <item>€129.99</item>-->
-<!--        <item>€119.99</item>-->
-<!--        <item>€499.99</item>-->
-<!--        <item>€39.99</item>-->
-<!--        <item>€139.99</item>-->
+        <!--        <item>€229.99</item>-->
+        <!--        <item>€129.99</item>-->
+        <!--        <item>€119.99</item>-->
+        <!--        <item>€499.99</item>-->
+        <!--        <item>€39.99</item>-->
+        <!--        <item>€139.99</item>-->
     </string-array>
 
     <string-array name="groceries">
@@ -118,5 +141,4 @@
         <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut nisi vitae sapien ultricies bibendum. Phasellus at velit bibendum, gravida mauris vitae, tempor nibh. Vestibulum eget scelerisque dui. Ut sodales ullamcorper libero, non elementum massa rutrum et. Cras feugiat nibh quis nunc pretium, eu efficitur nunc faucibus.</item>
         <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut nisi vitae sapien ultricies bibendum. Phasellus at velit bibendum, gravida mauris vitae, tempor nibh. Vestibulum eget scelerisque dui. Ut sodales ullamcorper libero, non elementum massa rutrum et. Cras feugiat nibh quis nunc pretium, eu efficitur nunc faucibus.</item>
     </string-array>
-
 </resources>

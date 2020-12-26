@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Project2</string>
+
+    <string name="Username">Lochlann O Neill</string>
+    <string name="ProfilePicture">Profile Picture</string>
+    <string name="Instruments">Instruments</string>
+    <string name="Groceries">Groceries</string>
+    <string name="Fashion">Fashion</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="link_register">Don\'t have an account? Register here</string>
+    <string name="link_login">Already have an account? Login here</string>
+
+    <string-array name="instruments">
+        <item>11_placeholder</item>
+        <item>11_placeholder</item>
+        <item>11_placeholder</item>
+        <item>11_placeholder</item>
+        <item>11_placeholder</item>
+        <item>11_placeholder</item>
+    </string-array>
+
+    <string-array name="instruments_codes">
+        <item>12_placeholder</item>
+        <item>12_placeholder</item>
+        <item>12_placeholder</item>
+        <item>12_placeholder</item>
+        <item>12_placeholder</item>
+        <item>12_placeholder</item>
+    </string-array>
+
+    <string-array name="instruments_prices">
+        <item>13_placeholder</item>
+        <item>13_placeholder</item>
+        <item>13_placeholder</item>
+        <item>13_placeholder</item>
+        <item>13_placeholder</item>
+        <item>13_placeholder</item>
+<!--        <item>€229.99</item>-->
+<!--        <item>€129.99</item>-->
+<!--        <item>€119.99</item>-->
+<!--        <item>€499.99</item>-->
+<!--        <item>€39.99</item>-->
+<!--        <item>€139.99</item>-->
+    </string-array>
+
+    <string-array name="groceries">
+        <item>21_placeholder</item>
+        <item>21_placeholder</item>
+        <item>21_placeholder</item>
+        <item>21_placeholder</item>
+        <item>21_placeholder</item>
+        <item>21_placeholder</item>
+    </string-array>
+
+    <string-array name="groceries_codes">
+        <item>22_placeholder</item>
+        <item>22_placeholder</item>
+        <item>22_placeholder</item>
+        <item>22_placeholder</item>
+        <item>22_placeholder</item>
+        <item>22_placeholder</item>
+    </string-array>
+
+    <string-array name="groceries_prices">
+        <item>23_placeholder</item>
+        <item>23_placeholder</item>
+        <item>23_placeholder</item>
+        <item>23_placeholder</item>
+        <item>23_placeholder</item>
+        <item>23_placeholder</item>
+    </string-array>
+
+    <string-array name="fashion">
+        <item>31_placeholder</item>
+        <item>31_placeholder</item>
+        <item>31_placeholder</item>
+        <item>31_placeholder</item>
+        <item>31_placeholder</item>
+    </string-array>
+
+    <string-array name="fashion_codes">
+        <item>32_placeholder</item>
+        <item>32_placeholder</item>
+        <item>32_placeholder</item>
+        <item>32_placeholder</item>
+        <item>32_placeholder</item>
+    </string-array>
+
+    <string-array name="fashion_prices">
+        <item>33_placeholder</item>
+        <item>33_placeholder</item>
+        <item>33_placeholder</item>
+        <item>33_placeholder</item>
+        <item>33_placeholder</item>
+    </string-array>
+
+    <string-array name="reviewer_names">
+        <item>Reviewer1</item>
+        <item>Reviewer2</item>
+        <item>Reviewer3</item>
+        <item>Reviewer4</item>
+        <item>Reviewer5</item>
+    </string-array>
+
+    <string-array name="reviewer_ratings">
+        <item>Rating1</item>
+        <item>Rating2</item>
+        <item>Rating3</item>
+        <item>Rating4</item>
+        <item>Rating5</item>
+    </string-array>
+
+    <string-array name="reviewer_messages">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut nisi vitae sapien ultricies bibendum. Phasellus at velit bibendum, gravida mauris vitae, tempor nibh. Vestibulum eget scelerisque dui. Ut sodales ullamcorper libero, non elementum massa rutrum et. Cras feugiat nibh quis nunc pretium, eu efficitur nunc faucibus.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut nisi vitae sapien ultricies bibendum. Phasellus at velit bibendum, gravida mauris vitae, tempor nibh. Vestibulum eget scelerisque dui. Ut sodales ullamcorper libero, non elementum massa rutrum et. Cras feugiat nibh quis nunc pretium, eu efficitur nunc faucibus.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut nisi vitae sapien ultricies bibendum. Phasellus at velit bibendum, gravida mauris vitae, tempor nibh. Vestibulum eget scelerisque dui. Ut sodales ullamcorper libero, non elementum massa rutrum et. Cras feugiat nibh quis nunc pretium, eu efficitur nunc faucibus.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut nisi vitae sapien ultricies bibendum. Phasellus at velit bibendum, gravida mauris vitae, tempor nibh. Vestibulum eget scelerisque dui. Ut sodales ullamcorper libero, non elementum massa rutrum et. Cras feugiat nibh quis nunc pretium, eu efficitur nunc faucibus.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut nisi vitae sapien ultricies bibendum. Phasellus at velit bibendum, gravida mauris vitae, tempor nibh. Vestibulum eget scelerisque dui. Ut sodales ullamcorper libero, non elementum massa rutrum et. Cras feugiat nibh quis nunc pretium, eu efficitur nunc faucibus.</item>
+    </string-array>
+
+</resources>

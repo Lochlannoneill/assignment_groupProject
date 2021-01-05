@@ -1,0 +1,81 @@
+/*
+@Author: Gerardo Julio V. Ancheta Jr.
+Group 11
+Team members: Lochlann O Neill, Keith Bullman, Daniels Pikurs, Gerardo Ancheta Jr. 
+Module: Year 03 Group Project
+Date: 21/11/2020 
+Fin-Ai Web app
+styles.css
+css for admin_view.php
+*/
+.header-container{
+    padding: 20px 20px 10px 70px;
+    height: auto;
+    background-color: #F0FFFF;
+    overflow: auto;
+    margin: 0;
+}
+.wrapper{
+	float:right;
+}
+ul, li {
+	list-style-type: none;
+	display: inline;
+	text-align: center;
+}
+.lblUser,.btnLogout{
+	display: inline-block;
+}
+button{
+	width:80px;
+	height:40px;
+	font-weight: bold;
+	font-family: 'Nunito', sans-serif;
+	border-radius: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 2px solid #6c757d; 
+}
+/*button:hover{
+	color: #FFFFFF;
+} */
+.btnLogout{
+	border: 2px solid #6c757d;
+	background-color: #FFFFFF; 
+}
+.btnLogout:hover{
+	color: #FFFFFF;
+	background-color: #6c757d; 
+	border: 2px solid #000000;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /*background-color: #f8f8f8;*/
+}
+h1{
+	text-align: center;
+}
+div.main-container{
+	margin-right:auto;
+	margin-left:auto;
+}
+table{
+	width: 750px;
+	border-collapse: collapse;
+	margin: 50px auto;
+}
+/* Zebra striping */
+tr:nth-child(even) {background-color: #f2f2f2;}
+th, td{
+	/*text-align: center;*/
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+}
+th{
+	background: #7FFFD4; 
+	color: #000000;
+	font-weight: bold;
+}

@@ -1,0 +1,89 @@
+/*
+@Author: Gerardo Julio V. Ancheta Jr.
+Group 11
+Team members: Lochlann O Neill, Keith Bullman, Daniels Pikurs, Gerardo Ancheta Jr. 
+Module: Year 03 Group Project
+Date: 21/11/2020 
+Fin-Ai Web app
+dashStyles.css
+css for dashboard.php
+*/
+.header-container{
+    padding: 20px 20px 10px 70px;
+    height: auto;
+    background-color: #F0FFFF;
+    overflow: auto;
+    margin: 0;
+}
+.wrapper{
+	float:right;
+}
+ul, li {
+	list-style-type: none;
+	display: inline;
+	text-align: center;
+}
+.lblUser,.btnLogout{
+	display: inline-block;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: #f8f8f8;*/
+}
+h1{
+	text-align: center;
+}
+div.dash-container{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: -webkit-center;
+}
+form .formData{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+select{
+	border: 2px solid #000000;
+	border-radius: 4px;
+	height: 30px;
+	width: 155px;
+    text-indent: 5px;
+}
+input[type=number]{
+	border: 2px solid #000000;
+	border-radius: 4px;
+	height:25px;
+	text-indent: 5px;
+}
+button{
+	font-weight: bold;
+	width:80px;
+	height:40px;
+	color: #000000;
+	font-family: 'Nunito', sans-serif;
+	border-radius: 12px;
+}
+.btnLogout{
+	border: 2px solid #6c757d;
+	background-color: #FFFFFF;
+}
+.btnLogout:hover{
+	color: #FFFFFF;
+	background-color: #6c757d; 
+	border: 2px solid #000000;
+}
+button.btnSubmit{
+	color: #000000;
+	border: 2px solid #6c757d;
+	background-color: #FFFFFF; 
+}
+button.btnSubmit:hover{
+	color: #000000;
+	background-color: #90EE90;
+	border: 2px solid #000000;
+}

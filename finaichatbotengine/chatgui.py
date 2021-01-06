@@ -248,23 +248,24 @@ def send():
 
         elif msg.startswith("requestLoan"):
             name, income = requestLoan(msg)
-            if income >= predictedLoan:
-                ChatLog.insert(END, "Bot: ", name, " is suitable for a loan!")
+            if float(income) >= float(predictedLoan):
+                ChatLog.insert(END, "Bot: " + name + " is suitable for a loan!\n\n")
             else:
-                ChatLog.insert(END, "Bot: ", name, " is NOT suitable for a loan.")
+                ChatLog.insert(END, "Bot: " + name + " is NOT suitable for a loan.\n\n")
 
         elif msg.startswith("requestHouse"):
-            name, result = requestHouse(msg)
+            result = True
+            name = requestHouse(msg)
             if result:
-                ChatLog.insert(END, "Bot: ", name, " is suitable for a House Mortgage (>=€", predicatedHousePrice, ")!")
+                ChatLog.insert(END, "Bot: " + name + " is suitable for a House Mortgage (>=€", predicatedHousePrice, ")!\n\n")
             else:
-                ChatLog.insert(END, "Bot: ", name, " is NOT suitable for a House Mortgage")
+                ChatLog.insert(END, "Bot: " + name + " is NOT suitable for a House Mortgage\n\n")
 
         elif msg == "/create" or msg == "/export":
             if not adminLogIn:
-                ChatLog.insert(END, "Must be logged in as Admin to access these features!")
+                ChatLog.insert(END, "Must be logged in as Admin to access these features!\n\n")
             else:
-                ChatLog.insert(END, "Access Granted!")
+                ChatLog.insert(END, "Access Granted!\n\n")
 
         else:
             res = chatbot_response(msg)
@@ -333,14 +334,14 @@ def brokerSignIn(name):
         else:
             return False
 
-    except ValueError:
+    except(ValueError, IndexError):
         return False
 
 
 def clientSignIn(namePassword):
     columns = defaultdict(list)
 
-    with open('./csvs/finai-client.csv') as f:
+    with open('./csvs/finai_client.csv') as f:
         reader = csv.DictReader(f)
         for row in reader:
             for (k, v) in row.items():
@@ -367,7 +368,7 @@ def clientSignIn(namePassword):
         else:
             return False
 
-    except ValueError:
+    except(ValueError, IndexError):
         return False
 
 
@@ -425,9 +426,9 @@ def requestHouse(name):
 
     try:
         if name in broker_name:
-            if broker_incomes[broker_name.index(name)] > predictedLoan:
-                if (broker_incomes[broker_name.index(name)] * 120) > predicatedHousePrice:
-                    return name, True
+            if float(broker_incomes[broker_name.index(name)]) > float(predictedLoan):
+                if int(broker_incomes[broker_name.index(name)] * 120) > float(predicatedHousePrice):
+                    return name
 
     except ValueError:
         return "ERROR"

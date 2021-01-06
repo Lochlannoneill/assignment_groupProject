@@ -1,0 +1,33 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Hey", "Hola", "Hello", "Good day"],
+         "responses": ["Greetings!\nType '/help' to get a list of handy commands :)\nOtherwise, type /quit to exit"],
+         "context": [""]
+        },
+          {"tag": "help",
+         "patterns": ["/help", "help", "assistance"],
+         "responses": ["\n/help - Shows list of available commands\n\n/signIn - Show Command to Sign In (Admin/Broker/Client)\n\n/requestLoan - Show command to Request Loan\n\n/create - Ability to Create New Datasets\n\n/export - Ability to Export Datasets\n\n/quit - Exit chat"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "quit",
+         "patterns": ["/quit"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        }
+      ]
+}

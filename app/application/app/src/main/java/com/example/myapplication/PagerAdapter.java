@@ -25,11 +25,11 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
-                return new FragmentGroceries();
+                return new FragmentPrediction();
             case 1:
-                return new FragmentInstruments();
+                return new FragmentDetails();
             case 2:
-                return new FragmentFashion();
+                return new FragmentPayments();
             default: return null;
         }
 
